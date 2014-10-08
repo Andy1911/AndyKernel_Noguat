@@ -3079,6 +3079,13 @@ config INTELLI_HOTPLUG
 	  An intelligent cpu hotplug driver for
 	  Low Latency Frequency Transition capable processors.
 
+
+
+config PVS_LEVEL_INTERFACE
+	bool "Expose PVS level information in SYSFS"
+	help
+	 Allow PVS level to be shown
+
 endif
 
 config KERNEL_TEXT_MPU_PROT
