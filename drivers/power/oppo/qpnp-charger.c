@@ -5867,6 +5867,7 @@ static int qpnp_start_charging(struct qpnp_chg_chip *chip)
 		pr_err("%s:charger maybe removed \n", __func__);
 		return rc;
 	}
+
 #ifdef CONFIG_CHARGE_LEVEL
 	if (qpnp_charger_type_get(chip) == POWER_SUPPLY_TYPE_USB_DCP)
 	{
@@ -7551,12 +7552,6 @@ static struct spmi_driver qpnp_charger_driver = {
 int __init
 qpnp_chg_init(void)
 {
-
-#ifdef CONFIG_CHARGE_LEVEL
-	// initialize charge info variables
-	charge_info_level = 0;
-	sprintf(charge_info_text, "No charger");
-#endif
 	return spmi_driver_register(&qpnp_charger_driver);
 }
 module_init(qpnp_chg_init);
