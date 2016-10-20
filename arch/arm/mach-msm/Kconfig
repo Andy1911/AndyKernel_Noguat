@@ -3045,8 +3045,6 @@ config HAS_MACH_MEMUTILS
 	bool "Motorola MSM memcpy enhancements"
 	help
 	Faster memcpy performance for Krait
-<<<<<<< HEAD
-=======
 
 config PVS_LEVEL_INTERFACE
 	bool "Expose PVS level information in sys fs (Boeffla-Kernel)"
@@ -3058,8 +3056,7 @@ config CHARGE_LEVEL
 	default y
 	help
 	  Allows configuration of ac and usb charging levels	
-	 
->>>>>>> c2bf559... oppo/qpnp-charger: Charge level interface
+	
 endif
 
 config KERNEL_TEXT_MPU_PROT
