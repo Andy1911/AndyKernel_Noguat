@@ -7551,15 +7551,12 @@ static struct spmi_driver qpnp_charger_driver = {
 int __init
 qpnp_chg_init(void)
 {
-<<<<<<< HEAD
 
 #ifdef CONFIG_CHARGE_LEVEL
 	// initialize charge info variables
 	charge_info_level = 0;
 	sprintf(charge_info_text, "No charger");
 #endif
-=======
->>>>>>> 0091289... oppo/qpnp-charger: Charge level interface 1.1
 	return spmi_driver_register(&qpnp_charger_driver);
 }
 module_init(qpnp_chg_init);
